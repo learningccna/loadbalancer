@@ -1,4 +1,4 @@
-# loadbalancer
+# Loadbalancer config file for Nginx
 
 Files for loadbalancer
 
