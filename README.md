@@ -8,14 +8,14 @@ etc/nginx/sites-available/
 
 ```
 upstream backend {
-    server jwwebserver.ddns.net:8081;
-    server jwwebserver2.ddns.net:8081;
-    server jwwebserver3.ddns.net:8081;
+    server 192.168.1.52:8081;
+    server 192.168.1.53:8081;
+    server 192.168.1.54:8081;
  }
 
 server {
     listen 80;
-      server_name jwloadbalancer.ddns.net;
+      server_name 192.168.1.51;
       location / {
       proxy_pass http://backend;
     }
